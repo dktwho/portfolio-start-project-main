@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
+import {Logo} from "../../components/logo/Logo";
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <a href="">
-                <img src="" alt=""/>
-            </a>
+            <Logo/>
 
             <nav>
                 <ul>
@@ -34,3 +33,4 @@ export const Header = () => {
 const StyledHeader = styled.header`
   background-color: #76dc6e;
 `
+
