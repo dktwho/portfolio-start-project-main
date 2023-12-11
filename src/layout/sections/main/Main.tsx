@@ -5,7 +5,7 @@ import photo from '../../../assets/images/JP_02959.jpg'
 export const Main = () => {
     return (
         <div>
-            <div>
+            <div >
                 <span>Hi There</span>
                 <h2>I am Alex Korobov</h2>
                 <h1>A Frontend Developer</h1>
