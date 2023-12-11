@@ -2,12 +2,19 @@ import React from 'react';
 import {Icon} from "../../../../components/icon/Icon";
 import styled from "styled-components";
 
-export const Skill = () => {
+
+type SkillPropsType = {
+    iconId: string
+    title: string
+    text: string
+}
+export const Skill = (props: SkillPropsType) => {
+    const {iconId, title, text} = props
     return (
         <StyledSkill>
-            <Icon iconId={'code'}/>
-            <SkillTitle>html5</SkillTitle>
-            <SkillText> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</SkillText>
+            <Icon iconId={iconId}/>
+            <SkillTitle>{title}</SkillTitle>
+            <SkillText>{text}</SkillText>
         </StyledSkill>
     );
 };

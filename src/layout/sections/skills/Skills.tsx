@@ -9,9 +9,9 @@ export const Skills = () => {
         <StyledSkills>
             <SectionTitle>My skills</SectionTitle>
             <FlexWrapper>
-                <Skill/>
-                <Skill/>
-                <Skill/>
+                <Skill iconId={'code'} title={'HTML5'} text={'There are many variations of passages of Lorem Ipsum '}/>
+                <Skill iconId={'css'} title={'STYLED'} text={'Lorem Ipsum has been the industry\'s standard dummy text .'}/>
+                <Skill iconId={'react'} title={'REACT'} text={'Content here, content here\', making it look like readable English.'}/>
             </FlexWrapper>
         </StyledSkills>
     );
