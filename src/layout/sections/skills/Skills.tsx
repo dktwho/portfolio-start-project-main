@@ -10,8 +10,11 @@ export const Skills = () => {
             <SectionTitle>My skills</SectionTitle>
             <FlexWrapper>
                 <Skill iconId={'code'} title={'HTML5'} text={'There are many variations of passages of Lorem Ipsum '}/>
-                <Skill iconId={'css'} title={'STYLED'} text={'Lorem Ipsum has been the industry\'s standard dummy text .'}/>
+                <Skill iconId={'css'} title={'CSS3'} text={'Lorem Ipsum has been the industry\'s standard dummy text .'}/>
                 <Skill iconId={'react'} title={'REACT'} text={'Content here, content here\', making it look like readable English.'}/>
+                <Skill iconId={'typescript'} title={'Typescript'} text={'There are many variations of passages of Lorem Ipsum '}/>
+                <Skill iconId={'styled'} title={'styled'} text={'Lorem Ipsum has been the industry\'s standard dummy text .'}/>
+                <Skill iconId={'figma'} title={'figma'} text={'Content here, content here\', making it look like readable English.'}/>
             </FlexWrapper>
         </StyledSkills>
     );
