@@ -26,6 +26,9 @@ export const Slider = () => {
 const StyledSlider = styled.div`
   border: 1px solid red;
   min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const Slide = styled.div`
@@ -40,11 +43,11 @@ const Name = styled.span`
 
 `
 
-const Pagination = styled.span`
+const Pagination = styled.div`
   span {
     display: inline-block;
     width: 10px;
-    height: 20px;
+    height: 10px;
     margin: 5px;
     background-color: #9b0ae3;
   }
