@@ -7,22 +7,26 @@ export const Contacts = () => {
         <StyledContacts>
             <SectionTitle>Contacts</SectionTitle>
             <StyledForm>
-                <Field/>
-                <Field/>
-                <Field as={'textarea'}/>
+                <Field placeholder={'name'}/>
+                <Field placeholder={'subject'}/>
+                <Field placeholder={'message'} as={'textarea'}/>
             </StyledForm>
-
         </StyledContacts>
     );
 };
 
 
 const StyledContacts = styled.section`
-
+  min-height: 50vh;
+  background-color: #0ee168;
 `
 
 const StyledForm = styled.form`
-
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 `
 
 const Field = styled.input`
