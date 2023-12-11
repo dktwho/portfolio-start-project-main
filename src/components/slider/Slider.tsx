@@ -13,18 +13,19 @@ export const Slider = () => {
 };
 
 const StyledSlider = styled.div`
-border: 1px solid red
+  border: 1px solid red;
+  min-width: 500px;
 `
 
 const Slide = styled.div`
+  text-align: center;
+`
+
+const Text = styled.p`
 
 `
 
-const Text = styled.div`
-
-`
-
-const Name = styled.div`
+const Name = styled.span`
 
 `
 
