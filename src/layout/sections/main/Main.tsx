@@ -9,7 +9,7 @@ export const Main = () => {
             <FlexWrapper align={'center'} justify={'space-around'}>
                 <div>
                     <span>Hi There</span>
-                    <h2>I am Alex Korobov</h2>
+                    <NameTitle>I am Alex Korobov</NameTitle>
                     <MainTitle>A Frontend Developer</MainTitle>
                 </div>
                 <Photo src={photo}/>
@@ -30,6 +30,10 @@ const StyledMain = styled.div`
 `
 const MainTitle = styled.h1`
   font-size: 36px;
+`
+
+const NameTitle = styled.h2`
+  font-size: 16px;
 `
 
 
