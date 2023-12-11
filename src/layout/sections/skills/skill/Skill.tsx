@@ -7,7 +7,7 @@ export const Skill = () => {
         <StyledSkill>
             <Icon iconId={'code'}/>
             <SkillTitle>html5</SkillTitle>
-            <SkillText>Lorem10</SkillText>
+            <SkillText> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</SkillText>
         </StyledSkill>
     );
 };
