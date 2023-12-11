@@ -14,7 +14,7 @@ export const Works = () => {
         <StyledWorks>
             <SectionTitle>My Works</SectionTitle>
             <Menu menuItems={worksItems}/>
-            <FlexWrapper>
+            <FlexWrapper justify={'space-around'}>
                 <Work text={'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'} title={'Social Network'} src={socialImg}/>
                 <Work text={'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'} title={'Timer'} src={timerImg}/>
             </FlexWrapper>

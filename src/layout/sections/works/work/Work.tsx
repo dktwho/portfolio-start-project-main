@@ -22,10 +22,14 @@ export const Work = (props: WorkPropsType) => {
 
 const StyledWork = styled.div`
   background-color: #b4c257;
+  max-width: 540px;
+  width: 100%;
 `
 
 const Image = styled.img`
-
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
 `
 
 const Link = styled.a`
