@@ -21,7 +21,7 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-
+  background-color: #b4c257;
 `
 
 const Image = styled.img`
