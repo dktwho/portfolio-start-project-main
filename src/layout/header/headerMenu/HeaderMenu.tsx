@@ -11,8 +11,8 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
                     return (
                         <ListItem key={index}>
                             <Link href="">{item}
-                            <Mask><span>{item}</span></Mask>
-                            <Mask><span>{item}</span></Mask>
+                                <Mask><span>{item}</span></Mask>
+                                <Mask><span>{item}</span></Mask>
                             </Link>
                         </ListItem>
                     )
@@ -31,11 +31,6 @@ const StyledHeaderMenu = styled.nav`
   }
 `
 
-const ListItem = styled.li`
-    position: relative;
-
-`
-
 const Link = styled.a`
   text-align: center;
   font-family: Josefin Sans, sans-serif;
@@ -51,6 +46,29 @@ const Mask = styled.span`
   display: inline-block;
   height: 50%;
   overflow: hidden;
-  outline: 1px solid red;
-  color: ${theme.colors.accent}
+  //outline: 1px solid red;
+  color: ${theme.colors.accent};
+
+  & + & {
+    top: 50%;
+
+    span {
+      display: inline-block;
+      transform: translateY(-50%);
+    }
+  }
+`
+
+const ListItem = styled.li`
+  position: relative;
+
+  &:hover {
+    ${Mask} {
+      transform: skewX(12deg) translateX(5px);
+
+      & + ${Mask} {
+        transform: skewX(12deg) translateX(-5px);
+      }
+    }
+  }
 `
