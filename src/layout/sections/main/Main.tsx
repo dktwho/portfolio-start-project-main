@@ -15,7 +15,9 @@ export const Main = () => {
                         <NameTitle>I am <span>Alex Korobov</span></NameTitle>
                         <MainTitle>A Frontend Developer</MainTitle>
                     </div>
-                    <Photo src={photo}/>
+                    <PhotoWrapper>
+                        <Photo src={photo} alt={''}/>
+                    </PhotoWrapper>
                 </FlexWrapper>
             </Container>
         </StyledMain>
@@ -65,6 +67,23 @@ const NameTitle = styled.h2`
 const SmallText = styled.h2`
   font-weight: 400;
   font-size: 14px;
+`
+
+const PhotoWrapper = styled.div`
+  position: relative;
+  z-index: 4;
+
+  &::before {
+    content: '';
+    width: 360px;
+    height: 470px;
+    border: 5px solid ${theme.colors.accent};
+    
+    position: absolute;
+    top: -24px;
+    left: 24px;
+    z-index: -1;
+  }
 `
 
 
