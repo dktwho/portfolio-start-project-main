@@ -32,8 +32,7 @@ const Photo = styled.img`
 
 const StyledMain = styled.div`
   min-height: 100vh;
-  background-color: #9a9795;
-  display: flex;
+  background-color: ${theme.colors.secondaryBg};
 `
 const MainTitle = styled.h1`
   font-size: 27px;
