@@ -58,7 +58,6 @@ const NameTitle = styled.h2`
       position: absolute;
       bottom: 0;
       z-index: -1;
-      
     }
   }
 `
