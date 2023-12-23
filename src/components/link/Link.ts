@@ -23,7 +23,7 @@ export const Link = styled.a`
 
     background-color: ${theme.colors.accent};
     position: absolute;
-    bottom: -2px;
+    bottom: 5px;
     // bottom: -5px;  maket value
     left: 0;
     right: 0;
