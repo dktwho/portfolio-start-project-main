@@ -23,6 +23,7 @@ export const GlobalStyled = createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: ${theme.colors.font}
   }
 
   ul {
@@ -58,6 +59,7 @@ export const GlobalStyled = createGlobalStyle`
     font-weight: 400;
     font-size: 14px;
   }
+
 `
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {Menu} from "../../../components/menu/Menu";
+import {TabMenu} from "./tabmenu/TabMenu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import socialImg from '../../../assets/images/Rectangle 14.png'
@@ -15,7 +15,7 @@ export const Works = () => {
         <StyledWorks>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
-                <Menu menuItems={worksItems}/>
+                <TabMenu menuItems={worksItems}/>
                 <FlexWrapper justify={'space-between'}>
                     <Work
                         text={'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'}
@@ -31,6 +31,4 @@ export const Works = () => {
 
 
 const StyledWorks = styled.section`
-  min-height: 100vh;
-  background-color: #47cad5;
 `
