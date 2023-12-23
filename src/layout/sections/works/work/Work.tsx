@@ -12,7 +12,9 @@ export const Work = (props: WorkPropsType) => {
     const {title, text, src} = props
     return (
         <StyledWork>
-            <Image src={src} alt=''/>
+            <ImageWrapper>
+                <Image src={src} alt=''/>
+            </ImageWrapper>
             <Description>
                 <Title>{title}</Title>
                 <Text>{text}</Text>
@@ -30,8 +32,25 @@ const StyledWork = styled.div`
 
   ${Link} {
     padding: 10px 0;
+
     & + ${Link} {
       margin-left: 20px;
+    }
+  }
+`
+const ImageWrapper = styled.div`
+  position: relative;
+
+  &:hover {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
     }
   }
 `
@@ -54,6 +73,8 @@ const Title = styled.h3`
 const Text = styled.p`
   margin: 14px 0 10px;
 `
+
+
 
 
 
