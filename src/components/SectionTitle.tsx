@@ -23,5 +23,4 @@ export const SectionTitle = styled.h2`
     bottom: -30px;
     transform: translateX(-50%);
   }
-
 `
