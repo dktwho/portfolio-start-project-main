@@ -26,7 +26,6 @@ export const Main = () => {
 };
 
 
-
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 4;
@@ -69,12 +68,11 @@ const StyledMain = styled.section`
 const MainTitle = styled.h1`
   font-size: 27px;
   font-weight: 400;
+  ${font({weight: 400, Fmax: 27, Fmin: 20})}
 `
 
 const NameTitle = styled.h2`
-  ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})} //font-size: 50px;
-          //font-family: 'Josefin Sans', sans-serif;
-          //font-weight: 700;
+  ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})}
   letter-spacing: 0.05em;
   margin: 10px 0;
 
