@@ -30,9 +30,27 @@ const Photo = styled.img`
   object-fit: cover;
 `
 
-const StyledMain = styled.div`
+const PhotoWrapper = styled.div`
+  position: relative;
+  z-index: 4;
+
+  &::before {
+    content: '';
+    width: 360px;
+    height: 470px;
+    border: 5px solid ${theme.colors.accent};
+
+    position: absolute;
+    top: -24px;
+    left: 24px;
+    z-index: -1;
+  }
+`
+
+const StyledMain = styled.section`
   min-height: 100vh;
   background-color: ${theme.colors.secondaryBg};
+  display: flex;
 `
 const MainTitle = styled.h1`
   font-size: 27px;
@@ -45,10 +63,11 @@ const NameTitle = styled.h2`
   letter-spacing: 0.05em;
   font-weight: 700;
   margin: 10px 0;
-  
+
   span {
     position: relative;
     z-index: 0;
+
     &::before {
       content: '';
       display: inline-block;
@@ -67,21 +86,6 @@ const SmallText = styled.h2`
   font-size: 14px;
 `
 
-const PhotoWrapper = styled.div`
-  position: relative;
-  z-index: 4;
 
-  &::before {
-    content: '';
-    width: 360px;
-    height: 470px;
-    border: 5px solid ${theme.colors.accent};
-    
-    position: absolute;
-    top: -24px;
-    left: 24px;
-    z-index: -1;
-  }
-`
 
 
