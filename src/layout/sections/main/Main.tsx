@@ -10,7 +10,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={'center'} justify={'space-between'} wrap={'wrap'}>
+                <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap'}>
                     <div>
                         <SmallText>Hi There</SmallText>
                         <NameTitle>I am <span>Alex Korobov</span></NameTitle>
@@ -29,6 +29,7 @@ export const Main = () => {
 const PhotoWrapper = styled.div`
   position: relative;
   z-index: 4;
+  margin-top: 65px;
 
   &::before {
     content: '';
@@ -44,15 +45,18 @@ const PhotoWrapper = styled.div`
     @media ${theme.media.mobile} {
       width: 314px;
       height: 414px;
+      top: -17px;
+      left: 20px;
     }
-
   }
+
 `
 
 const Photo = styled.img`
   width: 350px;
   height: 430px;
   object-fit: cover;
+  margin-right: 20px;
 
   @media ${theme.media.mobile} {
     width: 310px;
@@ -66,8 +70,6 @@ const StyledMain = styled.section`
   display: flex;
 `
 const MainTitle = styled.h1`
-  font-size: 27px;
-  font-weight: 400;
   ${font({weight: 400, Fmax: 27, Fmin: 20})}
 `
 
@@ -79,6 +81,7 @@ const NameTitle = styled.h2`
   span {
     position: relative;
     z-index: 0;
+    white-space: nowrap;
 
     &::before {
       content: '';
@@ -90,6 +93,11 @@ const NameTitle = styled.h2`
       bottom: 0;
       z-index: -1;
     }
+  }
+
+  @media ${theme.media.mobile} {
+    margin: 15px 0 20px;
+
   }
 `
 
