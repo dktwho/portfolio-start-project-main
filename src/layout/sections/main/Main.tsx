@@ -4,6 +4,7 @@ import photo from '../../../assets/images/JP_02959.jpg'
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 export const Main = () => {
     return (
@@ -71,10 +72,10 @@ const MainTitle = styled.h1`
 `
 
 const NameTitle = styled.h2`
-  font-size: 50px;
-  font-family: 'Josefin Sans', sans-serif;
+  ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})} //font-size: 50px;
+          //font-family: 'Josefin Sans', sans-serif;
+          //font-weight: 700;
   letter-spacing: 0.05em;
-  font-weight: 700;
   margin: 10px 0;
 
   span {
