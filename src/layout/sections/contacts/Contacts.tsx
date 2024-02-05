@@ -38,8 +38,6 @@ const StyledForm = styled.form`
     resize: none;
     height: 155px;
   }
-  
-
 `
 
 const Field = styled.input`
