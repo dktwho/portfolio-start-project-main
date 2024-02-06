@@ -146,11 +146,23 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   }
 `
 
+// desktop menu
+
+const DesktopMenu = styled.nav`
+  ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+`
+
 export const  S = {
     MenuItem,
     Mask,
     Link,
     MobileMenu,
     MobileMenuPopup,
-    BurgerButton
+    BurgerButton,
+    DesktopMenu
 }
