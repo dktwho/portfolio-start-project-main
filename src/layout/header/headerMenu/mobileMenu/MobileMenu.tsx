@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, {css} from "styled-components";
-import {theme} from "../../../styles/Theme";
+import {theme} from "../../../../styles/Theme";
 import {Menu} from "../menu/Menu";
 
 export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
