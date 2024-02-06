@@ -1,6 +1,6 @@
 import React from 'react';
 import {Icon} from "../../components/icon/Icon";
-import {FlexWrapper} from "../../components/FlexWrapper";
+import {FlexWrapper} from "../../components/commonComponents/FlexWrapper";
 import {S} from './Footer_Styles'
 import {socialItemData} from "./socialItemData";
 

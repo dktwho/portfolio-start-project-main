@@ -1,7 +1,7 @@
 import React from 'react';
-import {SectionTitle} from "../../../components/SectionTitle";
-import {Button} from "../../../components/Button";
-import {Container} from "../../../components/Container";
+import {SectionTitle} from "../../../components/commonComponents/SectionTitle";
+import {Button} from "../../../components/commonComponents/Button";
+import {Container} from "../../../components/commonComponents/Container";
 import {S} from './Contacts_Styles'
 
 export const Contacts: React.FC = () => {

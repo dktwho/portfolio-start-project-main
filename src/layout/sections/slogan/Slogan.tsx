@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-import {SectionTitle} from "../../../components/SectionTitle";
-import {Button} from "../../../components/Button";
-import {Container} from "../../../components/Container";
-import {FlexWrapper} from "../../../components/FlexWrapper";
+import {SectionTitle} from "../../../components/commonComponents/SectionTitle";
+import {Button} from "../../../components/commonComponents/Button";
+import {Container} from "../../../components/commonComponents/Container";
+import {FlexWrapper} from "../../../components/commonComponents/FlexWrapper";
 
 export const Slogan: React.FC = () => {
     return (

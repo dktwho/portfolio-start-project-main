@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlexWrapper} from "../FlexWrapper";
+import {FlexWrapper} from "../commonComponents/FlexWrapper";
 import {S} from './Slider_Styles'
 
 export const Slider: React.FC = () => {

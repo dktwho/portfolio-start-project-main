@@ -1,7 +1,7 @@
 import React from 'react';
 import photo from '../../../assets/images/JP_02959.jpg'
-import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Container} from "../../../components/Container";
+import {FlexWrapper} from "../../../components/commonComponents/FlexWrapper";
+import {Container} from "../../../components/commonComponents/Container";
 import {S} from './Main_Styles'
 
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-import {SectionTitle} from "../../../components/SectionTitle";
+import {SectionTitle} from "../../../components/commonComponents/SectionTitle";
 import {Icon} from "../../../components/icon/Icon";
 import {Slider} from "../../../components/slider/Slider";
-import {FlexWrapper} from "../../../components/FlexWrapper";
+import {FlexWrapper} from "../../../components/commonComponents/FlexWrapper";
 import {IconWrapper, S} from '../skills/Skills_Styles'
 
 export const Testimony = () => {

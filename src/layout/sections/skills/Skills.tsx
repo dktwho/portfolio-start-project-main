@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-import {FlexWrapper} from "../../../components/FlexWrapper";
-import {SectionTitle} from "../../../components/SectionTitle";
+import {FlexWrapper} from "../../../components/commonComponents/FlexWrapper";
+import {SectionTitle} from "../../../components/commonComponents/SectionTitle";
 import {Skill} from "./skill/Skill";
-import {Container} from "../../../components/Container";
+import {Container} from "../../../components/commonComponents/Container";
 import {skillData} from "./skillData";
 
 
