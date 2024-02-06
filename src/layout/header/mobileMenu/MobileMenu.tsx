@@ -3,7 +3,7 @@ import styled, {css} from "styled-components";
 import {theme} from "../../../styles/Theme";
 import {Menu} from "../menu/Menu";
 
-export const MobileMenu = (props: { menuItems: Array<string> }) => {
+export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
     const {menuItems} = props
     return (
         <StyledMobileMenu>
@@ -19,11 +19,7 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
 
 
 const StyledMobileMenu = styled.nav`
-  display: none;
 
-  @media ${theme.media.tablet} {
-    display: block;
-  }
 `
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
