@@ -1,17 +1,17 @@
 import React from 'react';
-import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {TabMenu} from "./tabmenu/TabMenu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import {Container} from "../../../components/Container";
 import {worksData} from "./worksData";
+import {S} from './Works_Styles'
 
 const worksItems = ['all', 'landing page', 'react', 'spa']
 
-export const Works = () => {
+export const Works: React.FC = () => {
     return (
-        <StyledWorks>
+        <S.Works>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <TabMenu menuItems={worksItems}/>
@@ -21,13 +21,8 @@ export const Works = () => {
                     })}
                 </FlexWrapper>
             </Container>
-        </StyledWorks>
+        </S.Works>
     );
 };
 
 
-const StyledWorks = styled.section`
-  ${FlexWrapper} {
-    gap: 30px;
-  }
-`
