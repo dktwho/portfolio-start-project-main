@@ -2,9 +2,9 @@ import React from 'react';
 import {Logo} from "../../components/logo/Logo";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import {MobileMenu} from "./mobileMenu/MobileMenu";
 import {S} from './Header_Styles'
+import {DesktopMenu} from "./desktopMenu/DesktopMenu";
 
 const items = ['Home', 'Skills', 'Works', 'Testimony', 'Contacts']
 export const Header: React.FC = () => {
@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo/>
-                    <HeaderMenu menuItems={items}/>
+                    <DesktopMenu menuItems={items}/>
                     <MobileMenu menuItems={items}/>
                 </FlexWrapper>
             </Container>
