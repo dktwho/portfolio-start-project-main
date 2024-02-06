@@ -8,7 +8,7 @@ type IconPropsType = {
     viewBox?: string
 
 }
-export const Icon = (props: IconPropsType) => {
+export const Icon: React.FC<IconPropsType> = (props: IconPropsType) => {
     const {iconId, width, height, viewBox} = props
     return (
         <svg width={width || '50'} height={height || '50'} viewBox={viewBox || '0 0 50 50'} fill="none"
