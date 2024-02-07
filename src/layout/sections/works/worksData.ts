@@ -4,6 +4,7 @@ import forestParallax from "../../../assets/images/forestParallax.png"
 import Scroll3dNature from "../../../assets/images/Scroll3dNature.png"
 import gta6Style from "../../../assets/images/gta6Style.png"
 import pizzaMenu from "../../../assets/images/pizzaMenu.png"
+import personalJournal from "../../../assets/images/personalJournal.png"
 
 export const worksData = [
     {
@@ -34,5 +35,11 @@ export const worksData = [
         demo: 'https://menau-app.vercel.app',
         code: 'https://github.com/dktwho/menau-app'
     },
-
+    {
+        text: 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,',
+        title: 'daybook',
+        src: personalJournal,
+        demo: 'https://daybook-red.vercel.app/',
+        code: 'https://github.com/dktwho/daybook'
+    },
 ]
