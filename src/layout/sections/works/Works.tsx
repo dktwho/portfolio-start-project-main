@@ -17,7 +17,8 @@ export const Works: React.FC = () => {
                 <TabMenu menuItems={worksItems}/>
                 <FlexWrapper justify={'space-between'} align={'flex-start'} wrap={'wrap'}>
                     {worksData.map((work) => {
-                        return <Work key={work.title} text={work.text} title={work.title} src={work.src}/>
+                        return <Work key={work.title} text={work.text} title={work.title} src={work.src}
+                                     code={work.code} demo={work.demo}/>
                     })}
                 </FlexWrapper>
             </Container>

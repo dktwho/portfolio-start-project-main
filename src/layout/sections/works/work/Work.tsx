@@ -6,10 +6,12 @@ import {S} from '../Works_Styles'
 type WorkPropsType = {
     title: string
     text: string
-    src: string
+    src: string,
+    demo: string,
+    code: string
 }
 export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
-    const {title, text, src} = props
+    const {title, text, src, demo, code} = props
     return (
         <S.Work>
             <S.ImageWrapper>
@@ -19,8 +21,8 @@ export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
             <S.Description>
                 <S.Title>{title}</S.Title>
                 <S.Text>{text}</S.Text>
-                <Link href={'#'}>demo</Link>
-                <Link href={'#'}>code</Link>
+                <Link href={demo}>demo</Link>
+                <Link href={code}>code</Link>
             </S.Description>
         </S.Work>
     );
